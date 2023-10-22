@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github-pub": "ng build --prod --base-href 'https://atrathbone.github.io/anchoress/' && npx angular-cli-ghpages --dir=dist/anchoress "
   },
   "private": true,
   "dependencies": {

@@ -1,4 +1,5 @@
 <div class="live-dates">
+    <span>Live: </span>
     <div *ngFor="let liveDate of liveDates; index as i">
         <ng-container 
              [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink" 
