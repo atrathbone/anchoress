@@ -1,0 +1,21 @@
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-panel{
+    width: 50vw;
+} 
+.right-panel{
+    width: 50vw;   
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 40%;
+}
