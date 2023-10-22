@@ -4,6 +4,7 @@ import { LinksContainerComponent } from './links-container/links-container.compo
 import { InfoContainerComponent } from './info-container/info-container.component';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { IconLinkComponent } from './icon-link/icon-link.component';
+import { LiveDatesListComponent } from './live-dates-list/live-dates-list.component';
 
 
 
@@ -12,7 +13,8 @@ import { IconLinkComponent } from './icon-link/icon-link.component';
     LinksContainerComponent,
     InfoContainerComponent,
     NewsFeedComponent,
-    IconLinkComponent
+    IconLinkComponent,
+    LiveDatesListComponent
   ],
   imports: [
     CommonModule

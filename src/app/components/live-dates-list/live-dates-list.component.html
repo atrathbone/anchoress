@@ -1,0 +1,18 @@
+<div class="live-dates">
+    <div *ngFor="let liveDate of liveDates; index as i">
+        <ng-container 
+             [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink" 
+             [ngTemplateOutletContext]="{liveDate:liveDate}">
+        </ng-container>
+    </div>
+</div>
+
+<ng-template #noLink let-liveDate="liveDate">
+    <span>{{this.getLiveDateString(liveDate)}}</span>
+</ng-template>
+
+<ng-template #link let-liveDate="liveDate">
+    <a [href]="liveDate.link"><span >{{this.getLiveDateString(liveDate)}}</span></a>
+</ng-template>
+
+
