@@ -9,15 +9,15 @@ import { IconLink } from 'src/app/types/types';
 export class HomeDisplayComponent implements OnInit {
 
   iconLinks: IconLink[]= [{
-    iconUrl:"/assets/images/logos/bandcamp-logo.svg.png",
+    iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
     linkUrl:"https://anchoress-official.bandcamp.com/album/in-times-where-eyes-are-low"
   },
   {
-    iconUrl:"/assets/images/logos/insta-logo.svg.png",
+    iconUrl:"assets/images/logos/insta-logo.svg.png",
     linkUrl:"https://www.instagram.com/anchoressss/"
   },
   {
-    iconUrl:"/assets/images/logos/soundcloud-logo.png",
+    iconUrl:"assets/images/logos/soundcloud-logo.png",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
   constructor() { }
