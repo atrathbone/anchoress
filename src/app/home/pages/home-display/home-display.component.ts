@@ -1,6 +1,5 @@
-import { Component, OnInit, Signal, effect } from '@angular/core';
+import { Component } from '@angular/core';
 import { IconLink, LiveDate } from 'src/app/types/types';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { ResponsiveService } from 'src/app/responsive.service';
 
 @Component({
