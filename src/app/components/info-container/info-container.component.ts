@@ -59,7 +59,13 @@ export class InfoContainerComponent implements OnInit {
       venue: "KW Institute/Pogo Bar",
       location: "Berlin (DE)",
       link: "https://www.kw-berlin.de/pogo-bar-cockdust/"
-    }
+    },
+  {
+    date: new Date("03-08-2024"), 
+    venue: "Zwölf Apostel Kirche",
+    location: "Berlin (DE)",
+    link: "https://t.rausgegangen.de/tickets/angry-women-joanna-gemma-auguri-hazel-iris-anchoress-aniqo"
+  }
   ]
   constructor() { }
 
