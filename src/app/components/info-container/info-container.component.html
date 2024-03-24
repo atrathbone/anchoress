@@ -1,6 +1,6 @@
 <div class="info-container">
     <div *ngIf="!resService.isPhoneOrTabletPortrait()" class="left-panel"></div>
-    <div class="right-panel">
+    <div class="right-panel" [class]="resService.isPhoneOrTabletPortrait() ? 'right-panel-phone' : 'right-panel-desktop'">
         <app-live-dates-list [liveDates]="liveDates"></app-live-dates-list>
     </div>
 </div>

@@ -7,9 +7,9 @@
 .left-panel{
     width: 50vw;
 } 
+
 .right-panel{
-    width: 50vw; 
-    height: 60vh;  
+  
     padding: 30px; 
     display: flex;
     flex-direction: column;
@@ -17,8 +17,17 @@
     gap: 10px;
     overflow-y: auto;
     -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    
+    scrollbar-width: none; /* Firefox */   
+}
+
+.right-panel-desktop{
+    height: 60vh;
+    width: 50vw;
+}
+
+.right-panel-phone{
+    height: 40vh;
+    width: 90vw;
 }
 
 .right-panel::-webkit-scrollbar {

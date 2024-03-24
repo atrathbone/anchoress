@@ -1,7 +1,14 @@
 .home-display{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.phone-header{
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    padding-left: 20px;
 }
 
 .logo-container{
@@ -11,7 +18,7 @@
 }
 
 .logo{
-    width: 30vw;
+    width: 35vw;
 }
 
 .logo-phone{

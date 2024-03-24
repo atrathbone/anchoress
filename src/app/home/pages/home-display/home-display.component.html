@@ -1,7 +1,9 @@
 <div class="home-display">
-    <app-links-container [iconLinks]="iconLinks"></app-links-container>
-    <div class="logo-container">
-        <img [class]="resService.isPhoneOrTabletPortrait() ? 'logo-phone' : 'logo'" class="logo" src="assets/images/anchoress_logo.png" alt="logo">
+    <div [class]="!resService.isPhoneOrTabletPortrait() ? 'phone-header' : ''">
+        <app-links-container [iconLinks]="iconLinks"></app-links-container>
+        <div class="logo-container">
+            <img [class]="resService.isPhoneOrTabletPortrait() ? 'logo-phone' : 'logo'" class="logo" src="assets/images/anchoress_logo.png" alt="logo">
+        </div>
     </div>
     <app-info-container [liveDates]="liveDates"></app-info-container>
 </div>
