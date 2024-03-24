@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { IconLink, LiveDate } from 'src/app/types/types';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { ResponsiveService } from 'src/app/responsive.service';
 
 @Component({
   selector: 'app-home-display',
   templateUrl: './home-display.component.html',
   styleUrls: ['./home-display.component.scss']
 })
-export class HomeDisplayComponent implements OnInit {
+export class HomeDisplayComponent {
   liveDates: LiveDate[] = [
     {
       date: new Date("03-02-2023"),
@@ -78,9 +80,6 @@ export class HomeDisplayComponent implements OnInit {
     iconUrl:"assets/images/logos/soundcloud-logo.png",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor(private responsive: ResponsiveService) { }
 
 }
