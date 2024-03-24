@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Signal, effect } from '@angular/core';
 import { IconLink, LiveDate } from 'src/app/types/types';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { ResponsiveService } from 'src/app/responsive.service';
@@ -9,6 +9,7 @@ import { ResponsiveService } from 'src/app/responsive.service';
   styleUrls: ['./home-display.component.scss']
 })
 export class HomeDisplayComponent {
+  resService : ResponsiveService;
   liveDates: LiveDate[] = [
     {
       date: new Date("03-02-2023"),
@@ -80,6 +81,9 @@ export class HomeDisplayComponent {
     iconUrl:"assets/images/logos/soundcloud-logo.png",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
-  constructor(private responsive: ResponsiveService) { }
+
+  constructor(private responsive: ResponsiveService) {
+    this.resService = responsive;
+   }
 
 }
