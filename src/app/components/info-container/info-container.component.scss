@@ -8,14 +8,19 @@
     width: 50vw;
 } 
 .right-panel{
-    width: 50vw;   
+    width: 50vw; 
+    height: 60vh;  
     padding: 30px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    
 }
 
-.logo{
-    width: 40%;
+.right-panel::-webkit-scrollbar {
+    display: none;
 }

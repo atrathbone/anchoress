@@ -1,7 +1,6 @@
 <div class="info-container">
-    <div class="left-panel"></div>
+    <div *ngIf="!resService.isPhoneOrTabletPortrait()" class="left-panel"></div>
     <div class="right-panel">
-        <img class="logo" src="assets/images/anchoress-logo.webp" alt="logo">
         <app-live-dates-list [liveDates]="liveDates"></app-live-dates-list>
     </div>
 </div>
