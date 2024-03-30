@@ -11,9 +11,13 @@ export class LiveDatesListComponent implements OnInit {
 @Input()
 liveDates!: LiveDate[];
 
-  constructor() { }
+public orderedDates: LiveDate[] = [];
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    this.orderedDates = this.liveDates.sort((a, b) => b.date.getTime() - a.date.getTime())
   }
 
   public getLiveDateString(liveDate: LiveDate){

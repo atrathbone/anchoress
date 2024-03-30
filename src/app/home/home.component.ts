@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, effect } from '@angular/core';
+import { ResponsiveService } from '../responsive.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-  currentBackgroundImg = './assets/images/background.webp';
-  background = {
-    "background-image": `url(${this.currentBackgroundImg})`,
-  };
+export class HomeComponent {
 
-  constructor() {}
+  public resService: ResponsiveService;
 
-  ngOnInit(): void {}
+  constructor(responsive: ResponsiveService) {
+    this.resService = responsive;
+  }
+
 }
