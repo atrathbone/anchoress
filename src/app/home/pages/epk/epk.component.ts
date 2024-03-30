@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, isDevMode } from '@angular/core';
 import { ResponsiveService } from 'src/app/responsive.service';
 import { IconLink, LiveDate } from 'src/app/types/types';
 
@@ -8,6 +8,7 @@ import { IconLink, LiveDate } from 'src/app/types/types';
   styleUrl: './epk.component.scss'
 })
 export class EpkComponent {
+  baseUrl = isDevMode() ? "" : "/anchoress/";
   resService : ResponsiveService;
   iconLinks: IconLink[]= [{
     //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
