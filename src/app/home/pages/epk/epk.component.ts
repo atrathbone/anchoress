@@ -8,7 +8,8 @@ import { IconLink, LiveDate } from 'src/app/types/types';
   styleUrl: './epk.component.scss'
 })
 export class EpkComponent {
-  baseUrl = isDevMode() ? "" : "/anchoress/";
+  //baseUrl = isDevMode() ? "" : "/anchoress/";
+  baseUrl = "/anchoress/";
   resService : ResponsiveService;
   iconLinks: IconLink[]= [{
     //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
