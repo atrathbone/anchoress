@@ -7,6 +7,10 @@ import { IconLinkComponent } from './icon-link/icon-link.component';
 import { LiveDatesListComponent } from './live-dates-list/live-dates-list.component';
 import { RouterModule } from '@angular/router';
 import { BioComponent } from './bio/bio.component';
+import { MusicComponent } from './music/music.component';
+import { VideosComponent } from './videos/videos.component';
+import { LiveshowsComponent } from './liveshows/liveshows.component';
+import { ImagesComponent } from './images/images.component';
 
 
 
@@ -17,7 +21,11 @@ import { BioComponent } from './bio/bio.component';
     NewsFeedComponent,
     IconLinkComponent,
     LiveDatesListComponent,
-    BioComponent
+    BioComponent,
+    MusicComponent,
+    VideosComponent,
+    LiveshowsComponent,
+    ImagesComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +36,11 @@ import { BioComponent } from './bio/bio.component';
     InfoContainerComponent,
     NewsFeedComponent,
     IconLinkComponent,
-    BioComponent
+    BioComponent,
+    MusicComponent,
+    VideosComponent,
+    LiveshowsComponent,
+    ImagesComponent
   ]
 })
 export class ComponentsModule { }
