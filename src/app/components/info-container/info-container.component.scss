@@ -9,11 +9,7 @@
 } 
 
 .right-panel{
-  
     padding: 30px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
     overflow-y: auto;
     -ms-overflow-style: none; /* IE and Edge */
@@ -21,15 +17,32 @@
 }
 
 .right-panel-desktop{
+    font-size: small;
     height: 60vh;
     width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .right-panel-phone{
-    height: 40vh;
+    font-size: x-small;
+    height: 30vh;
     width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
 .right-panel::-webkit-scrollbar {
     display: none;
+}
+
+.show-dates-toggle{
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
 }
