@@ -1,4 +1,5 @@
 <a [href]="iconLink.linkUrl">
-    <img class="icon-link" [src]="iconLink.iconUrl" alt="icon" target="_blank" rel="noopener noreferrer">
+    <img *ngIf="iconLink.iconUrl" class="icon-link" [src]="iconLink.iconUrl" alt="icon" target="_blank" rel="noopener noreferrer">
+    <span *ngIf="iconLink.text">{{iconLink.text}}</span>
 </a>
 

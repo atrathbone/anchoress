@@ -69,15 +69,18 @@ export class HomeDisplayComponent {
   }
   ]
   iconLinks: IconLink[]= [{
-    iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
+    //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
+    text: "bandcamp",
     linkUrl:"https://anchoress-official.bandcamp.com/album/in-times-where-eyes-are-low"
   },
   {
-    iconUrl:"assets/images/logos/insta-logo.svg.png",
+    //iconUrl:"assets/images/logos/insta-logo.svg.png",
+    text:"instagram",
     linkUrl:"https://www.instagram.com/anchoressss/"
   },
   {
-    iconUrl:"assets/images/logos/soundcloud-logo.png",
+    //iconUrl:"assets/images/logos/soundcloud-logo.png",
+    text:"soundcloud",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
 
