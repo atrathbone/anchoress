@@ -70,17 +70,17 @@ export class HomeDisplayComponent {
   ]
   iconLinks: IconLink[]= [{
     //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
-    text: "bandcamp",
+    text: "BANDCAMP",
     linkUrl:"https://anchoress-official.bandcamp.com/album/in-times-where-eyes-are-low"
   },
   {
     //iconUrl:"assets/images/logos/insta-logo.svg.png",
-    text:"instagram",
+    text:"INSTAGRAM",
     linkUrl:"https://www.instagram.com/anchoressss/"
   },
   {
     //iconUrl:"assets/images/logos/soundcloud-logo.png",
-    text:"soundcloud",
+    text:"SOUNDCLOUD",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
 
