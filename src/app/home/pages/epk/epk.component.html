@@ -1,17 +1,17 @@
 <div [class]="!resService.isPhoneOrTabletPortrait() ? 'static-links' : 'phone-static-links'">
-    <a class="static-link" [href]="baseUrl + '/epk#section-two'">
+    <a class="static-link" (click)="scroll(sectionTwo)">
         <span>BIO</span>
     </a>
-    <a class="static-link"  [href]="baseUrl + '/epk#section-three'">
+    <a class="static-link"  (click)="scroll(sectionThree)">
         <span>MUSIC</span>
     </a>
-    <a class="static-link"  [href]="baseUrl + '/epk#section-four'">
+    <a class="static-link"  (click)="scroll(sectionFour)">
         <span>VIDEOS</span>
     </a>
-    <a class="static-link"  [href]="baseUrl + '/epk#section-five'">
+    <a class="static-link"  (click)="scroll(sectionFive)">
         <span>LIVE DATES</span>
     </a>
-    <a class="static-link"  [href]="baseUrl + '/epk#section-six'">
+    <a class="static-link"  (click)="scroll(sectionSix)">
         <span>IMAGES</span>
     </a>
 </div>
@@ -24,20 +24,20 @@
             </div>
         </div>
     </div>
-    <div id="section-two">
+    <div #sectionTwo>
         <app-bio></app-bio>    
     </div>
-    <div id="section-three">
+    <div #sectionThree>
         <app-music></app-music>    
     </div>
-    <div id="section-four">
+    <div #sectionFour>
         <app-videos></app-videos>    
     </div>
-    <div id="section-five">
+    <div id="section-five" #sectionFive>
         <span>LIVE SHOWS</span>
         <app-live-dates-list [sortByYear]="true" [liveDates]="liveDates"></app-live-dates-list>    
     </div>
-    <div id="section-six">
+    <div #sectionSix>
         <app-images></app-images>
     </div>
 </div>

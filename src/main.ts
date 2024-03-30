@@ -6,7 +6,6 @@ import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
-  document.querySelector('base')!.setAttribute('href', '/anchoress/');
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
