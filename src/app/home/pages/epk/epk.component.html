@@ -11,6 +11,9 @@
     <a class="static-link"  [href]="'/epk#section-five'">
         <span>LIVE DATES</span>
     </a>
+    <a class="static-link"  [href]="'/epk#section-six'">
+        <span>IMAGES</span>
+    </a>
 </div>
 <div class="epk-display">
     <div id="section-one">
@@ -33,5 +36,8 @@
     <div id="section-five">
         <span>LIVE SHOWS</span>
         <app-live-dates-list [sortByYear]="true" [liveDates]="liveDates"></app-live-dates-list>    
+    </div>
+    <div id="section-six">
+        <app-images></app-images>
     </div>
 </div>
