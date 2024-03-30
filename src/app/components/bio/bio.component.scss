@@ -1,0 +1,40 @@
+.bio-container{
+    padding: 60px 0 50px 0;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    color: white;
+    font-weight: lighter;
+}
+
+.phone-container{
+    flex-direction: column;
+    flex-direction: flex-start;
+    align-items: center;
+    img, p {
+        max-width: 80vw;
+    }
+}
+
+.desktop-container{
+    flex-direction: row;
+    img, p {
+        max-width: 40vw;
+    }
+}
+
+.right-side{
+    padding: 10px 20px 10px 20px;
+}
+
+.left-side{
+    padding: 20px;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}

@@ -6,6 +6,7 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { IconLinkComponent } from './icon-link/icon-link.component';
 import { LiveDatesListComponent } from './live-dates-list/live-dates-list.component';
 import { RouterModule } from '@angular/router';
+import { BioComponent } from './bio/bio.component';
 
 
 
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     InfoContainerComponent,
     NewsFeedComponent,
     IconLinkComponent,
-    LiveDatesListComponent
+    LiveDatesListComponent,
+    BioComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { RouterModule } from '@angular/router';
     LinksContainerComponent,
     InfoContainerComponent,
     NewsFeedComponent,
-    IconLinkComponent
+    IconLinkComponent,
+    BioComponent
   ]
 })
 export class ComponentsModule { }
