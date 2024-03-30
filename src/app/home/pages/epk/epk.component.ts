@@ -24,10 +24,9 @@ export class EpkComponent {
     text:"SOUNDCLOUD",
     linkUrl:"https://soundcloud.com/anchoress-berlin"
   },]
-
-
+  
   constructor(private responsive: ResponsiveService) {
     this.resService = responsive;
    }
 
-}
+  }
