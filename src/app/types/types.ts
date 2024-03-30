@@ -1,6 +1,6 @@
 export type IconLink = {
   iconUrl?: string, 
-  linkUrl: string, 
+  linkUrl?: string, 
   text?: string
 }
 

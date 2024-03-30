@@ -1,0 +1,37 @@
+.music-container{
+    padding: 60px 10px 50px 10px;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.img-with-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    span{
+        margin-top: 10px
+    };
+}
+
+.phone-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    img{
+        max-width: 60vw;
+    }
+}
+
+.desktop-container{
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+        max-width: 20vw;
+    }
+}
