@@ -9,7 +9,6 @@ import { RouterModule } from '@angular/router';
 import { BioComponent } from './bio/bio.component';
 import { MusicComponent } from './music/music.component';
 import { VideosComponent } from './videos/videos.component';
-import { LiveshowsComponent } from './liveshows/liveshows.component';
 import { ImagesComponent } from './images/images.component';
 
 
@@ -24,7 +23,6 @@ import { ImagesComponent } from './images/images.component';
     BioComponent,
     MusicComponent,
     VideosComponent,
-    LiveshowsComponent,
     ImagesComponent
   ],
   imports: [
@@ -39,8 +37,8 @@ import { ImagesComponent } from './images/images.component';
     BioComponent,
     MusicComponent,
     VideosComponent,
-    LiveshowsComponent,
-    ImagesComponent
+    ImagesComponent,
+    LiveDatesListComponent
   ]
 })
 export class ComponentsModule { }

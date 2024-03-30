@@ -10,14 +10,32 @@ import { LiveDate } from 'src/app/types/types';
 export class LiveDatesListComponent implements OnInit {
 @Input()
 liveDates!: LiveDate[];
+@Input()
+sortByYear: boolean = false;
 
 public orderedDates: LiveDate[] = [];
-
+public sortedByYear: {[key: string]: LiveDate[]} = {};
+public dateKeys: string[] = [];
   constructor() { 
   }
 
   ngOnInit(): void {
-    this.orderedDates = this.liveDates.sort((a, b) => b.date.getTime() - a.date.getTime())
+    this.orderedDates = this.liveDates.sort((a, b) => b.date.getTime() - a.date.getTime());
+    for(let date of this.liveDates){
+      let dStr = date.date.getFullYear().toString();
+      if(this.sortedByYear[dStr]){
+        console.log("old")
+        this.sortedByYear[dStr].push(date);
+      }
+      else{
+        console.log("new")
+        this.sortedByYear[dStr] = [date]
+        this.dateKeys.push(dStr);
+      }
+    }
+    Object.keys(this.sortedByYear).forEach((k)=>{
+      this.sortedByYear[k] = this.sortedByYear[k].sort((a, b) => b.date.getTime() - a.date.getTime());
+    })
   }
 
   public getLiveDateString(liveDate: LiveDate){

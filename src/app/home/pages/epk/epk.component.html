@@ -2,8 +2,14 @@
     <a class="static-link" [href]="'/epk#section-two'">
         <span>BIO</span>
     </a>
-    <a class="static-link" [href]="'/epk#section-three'">
+    <a class="static-link"  [href]="'/epk#section-three'">
         <span>MUSIC</span>
+    </a>
+    <a class="static-link"  [href]="'/epk#section-four'">
+        <span>VIDEOS</span>
+    </a>
+    <a class="static-link"  [href]="'/epk#section-five'">
+        <span>LIVE DATES</span>
     </a>
 </div>
 <div class="epk-display">
@@ -20,5 +26,12 @@
     </div>
     <div id="section-three">
         <app-music></app-music>    
+    </div>
+    <div id="section-four">
+        <app-videos></app-videos>    
+    </div>
+    <div id="section-five">
+        <span>LIVE SHOWS</span>
+        <app-live-dates-list [sortByYear]="true" [liveDates]="liveDates"></app-live-dates-list>    
     </div>
 </div>
