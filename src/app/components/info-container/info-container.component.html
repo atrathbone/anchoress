@@ -1,7 +1,7 @@
 <div class="info-container">
     <div *ngIf="!resService.isPhoneOrTabletPortrait()" class="left-panel"></div>
     <div class="right-panel" [class]="resService.isPhoneOrTabletPortrait() ? 'right-panel-phone' : 'right-panel-desktop'">
-        <app-live-dates-list  [sortByYear]="true" *ngIf="this.showDates" [liveDates]="liveDates"></app-live-dates-list>
+        <app-live-dates-list  *ngIf="this.showDates" [liveDates]="liveDates"></app-live-dates-list>
         <span class="show-dates-toggle" (click)="liveDatesToggle()">{{ this.showDates ? "[ Live - ]" : "[ Live + ]" }}</span>
     </div>
 </div>
