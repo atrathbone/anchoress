@@ -27,52 +27,77 @@ export class EpkComponent {
   },]
   liveDates: LiveDate[] = [
     {
-      date: new Date("03-02-2023"),
+      date: new Date(this.getCompatableDateStr("09-11-2021")),
+      venue: "CURA x Amplify",
+      location: "Berlin (DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("11-18-2021")),
+      venue: "Autopsie Pohl",
+      location: "Berlin (DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("01-28-2022")),
+      venue: "Anecoica Studio / CTM Vorspiel",
+      location: "Berlin (DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("03-10-2022")),
+      venue: "Tennisbar",
+      location: "Berlin (DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("05-21-2022")),
+      venue: "BPA Gallery",
+      location: "Berlin (DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("03-02-2023")),
       venue: "PAS",
       location: "Berlin (DE)",
       link: "https://pas-berlin.org/"
     },
     {
-      date: new Date("04-20-2023"),
+      date: new Date(this.getCompatableDateStr("04-20-2023")),
       venue: "8mm Bar",
       location: "Berlin (DE)",
       link: "https://www.eventim-light.com/de/a/5f002783c9f8d46492128f51/e/64243cb005c38b0a07ff055e"
     },
     {
-      date: new Date("05-13-2023"),
+      date: new Date(this.getCompatableDateStr("05-13-2023")),
       venue: "(NYT)",
       location: "Berlin (DE)",
       notes: "solo sets",
       link: "https://www.instagram.com/not.yet.titled.art.space/"
     },
     {
-      date: new Date("06-21-2023"),
+      date: new Date(this.getCompatableDateStr("06-21-2023")),
       venue: "Loophole",
       location: "Berlin (DE)",
       link: "https://www.instagram.com/loophole_brln/?hl=de"
     },
     {
-      date: new Date("07-14-2023"),
+      date: new Date(this.getCompatableDateStr("07-14-2023")),
       venue: "PAS",
       location: "Berlin (DE)",
       notes: "solo sets",
       link: "https://pas-berlin.org/"
     },
     {
-      date: new Date("09-07-2023"),
+      date: new Date(this.getCompatableDateStr("09-07-2023")),
       venue: "Arkaoda",
       location: "Berlin (DE)",
       link: "https://berlin.arkaoda.com/?/default/detail/id=830"
     },
     {
-      date: new Date("09-23-2023"),
+      date: new Date(this.getCompatableDateStr("09-23-2023")),
       venue: "Cittipunkt",
       location: "Berlin (DE)",
       notes: "solo sets",
       link: "http://cittipunkt.online/newsletter.pdf"
     },
     {
-      date: new Date("10-19-2023"),
+      date: new Date(this.getCompatableDateStr("10-19-2023")),
       venue: "KW Institute/Pogo Bar",
       location: "Berlin (DE)",
       link: "https://www.kw-berlin.de/pogo-bar-cockdust/"
@@ -92,5 +117,9 @@ export class EpkComponent {
    scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
+
+  getCompatableDateStr(dString: string){
+    return dString.replace(/-/g, "/")
+   }
 
   }
