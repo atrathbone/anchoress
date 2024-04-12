@@ -14,9 +14,6 @@ export class InfoContainerComponent implements OnInit {
   public showDates = false;
   constructor(private responsive: ResponsiveService) { 
     this.resService = responsive
-    if(this.resService.isPhoneOrTabletPortrait()){
-      this.showDates = true;
-    }
   }
 
   ngOnInit(): void {
