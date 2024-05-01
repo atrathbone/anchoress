@@ -1,36 +1,9 @@
 .music-container{
-    padding: 60px 10px 50px 10px;
+    padding: 60px 30px 50px 30px;
     background-color: black;
     display: flex;
-    a{
-        color: white;
-        text-decoration: none;
-    }
-}
-
-.img-with-link{
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 20px 0 20px 0;
-    span{
-        margin-top: 10px
-    };
+    justify-content: flex-start;  
+    color: white;
 }
 
-.phone-container{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    img{
-        max-width: 60vw;
-    }
-}
-
-.desktop-container{
-    flex-direction: row;
-    justify-content: space-around;
-    img {
-        max-width: 20vw;
-    }
-}
