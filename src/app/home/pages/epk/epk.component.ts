@@ -27,6 +27,23 @@ export class EpkComponent {
   },]
   liveDates: LiveDate[] = [
     {
+      date: new Date(this.getCompatableDateStr("11-08-2024")),
+      venue: "tba",
+      location: "(DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("05-23-2024")),
+      venue: "Café Babette/Deep See",
+      location: "Berlin (DE)",
+      notes: "Anna Lucia Solo"
+    },
+    {
+      date: new Date(this.getCompatableDateStr("05-18-2024")),
+      venue: "Madame Claude",
+      location: "Berlin (DE)",
+      notes: "Anna Lucia Solo"
+    },
+    {
       date: new Date(this.getCompatableDateStr("09-11-2021")),
       venue: "CURA x Amplify",
       location: "Berlin (DE)",
