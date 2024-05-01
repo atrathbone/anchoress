@@ -4,11 +4,11 @@
         <div *ngIf="!resService.isPhoneOrTabletPortrait()">
             <app-live-dates-list  *ngIf="this.showDates" [liveDates]="liveDates"></app-live-dates-list>   
         </div>
-        <span class="show-dates-toggle" (click)="liveDatesToggle()">{{ this.showDates ? "[ Live - ]" : "[ Live + ]" }}</span> 
+        <span class="show-dates-toggle clickable" (click)="liveDatesToggle()">{{ this.showDates ? "[ Live - ]" : "[ Live + ]" }}</span> 
     </div>
 </div>
 <div *ngIf="resService.isPhoneOrTabletPortrait() && this.showDates" class="phone-dates">
-    <span class="show-phone-dates-toggle" (click)="liveDatesToggle()">[CLOSE X]</span>
+    <span class="show-phone-dates-toggle clickable" (click)="liveDatesToggle()">[CLOSE X]</span>
     <app-live-dates-list  *ngIf="this.showDates" [liveDates]="liveDates"></app-live-dates-list>   
 </div>
 
