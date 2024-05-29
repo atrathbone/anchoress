@@ -27,20 +27,35 @@ export class EpkComponent {
   },]
   liveDates: LiveDate[] = [
     {
-      date: new Date(this.getCompatableDateStr("11-08-2024")),
+      date: new Date(this.getCompatableDateStr("09-28-2024")),
       venue: "tba",
+      location: "(DE)",
+      notes: "Anna Lucia Solo"
+    },
+    {
+      date: new Date(this.getCompatableDateStr("08-14-2024")),
+      venue: "tba",
+      location: "(DE)",
+      notes: "Anna Lucia Solo"
+    },
+    {
+      date: new Date(this.getCompatableDateStr("11-08-2024")),
+      venue: "Beautiful Noise Siegen Festival",
+      link: "http://www.beautiful-noise-siegen.de/Konzerte/",
       location: "(DE)",
     },
     {
       date: new Date(this.getCompatableDateStr("05-23-2024")),
       venue: "Café Babette/Deep See",
       location: "Berlin (DE)",
+      link: "https://cafebabette.de/art-events/deep-see-23.5.24/",
       notes: "Anna Lucia Solo"
     },
     {
       date: new Date(this.getCompatableDateStr("05-18-2024")),
       venue: "Madame Claude",
       location: "Berlin (DE)",
+      link: "https://madameclaude.de/event/anna-lucia-julia-witas-klub-marta-dj-set/",
       notes: "Anna Lucia Solo"
     },
     {
