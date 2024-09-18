@@ -11,16 +11,29 @@ export class HomeDisplayComponent {
   resService : ResponsiveService;
   liveDates: LiveDate[] = [
     {
-      date: new Date(this.getCompatableDateStr("09-28-2024")),
-      venue: "tba",
+      date: new Date(this.getCompatableDateStr("12-06-2024")),
+      venue: "Kunstverein Wiesbaden",
       location: "(DE)",
       notes: "Anna Lucia Solo"
     },
     {
-      date: new Date(this.getCompatableDateStr("08-14-2024")),
-      venue: "tba",
+      date: new Date(this.getCompatableDateStr("10-26-2024")),
+      venue: "Kunstverein Schwerin",
       location: "(DE)",
       notes: "Anna Lucia Solo"
+    },
+    {
+      date: new Date(this.getCompatableDateStr("09-26-2024")),
+      venue: "Radio 1 Live",
+      location: "(DE)",
+      link: "https://www.radioeins.de/themen/stadtleben/studioeins/"
+    },
+    {
+      date: new Date(this.getCompatableDateStr("09-28-2024")),
+      venue: "Roter Salon Volksbühne",
+      location: "(DE)",
+      notes: "Anna Lucia Solo",
+      link: "https://www.volksbuehne.berlin/#/de/repertoire/anna-lucia-julia-witas-rouge-ah"
     },
     {
       date: new Date(this.getCompatableDateStr("11-08-2024")),
@@ -108,7 +121,7 @@ export class HomeDisplayComponent {
   {
     //iconUrl:"assets/images/logos/insta-logo.svg.png",
     text:"INSTAGRAM",
-    linkUrl:"https://www.instagram.com/anchoressss/"
+    linkUrl:"https://www.instagram.com/anchoress_band"
   },
   {
     //iconUrl:"assets/images/logos/soundcloud-logo.png",
