@@ -17,6 +17,14 @@ export class HomeDisplayComponent {
       notes: "Anna Lucia Solo"
     },
     {
+      date: new Date(this.getCompatableDateStr("12-10-2024")),
+      venue: "Café Babette/Deep See",
+      location: "(DE)",
+      notes: "Anna Lucia Solo",
+      link: "https://cafebabette.de/art-events/above-nothing/"
+
+    },
+    {
       date: new Date(this.getCompatableDateStr("10-26-2024")),
       venue: "Kunstverein Schwerin",
       location: "(DE)",
@@ -112,7 +120,9 @@ export class HomeDisplayComponent {
     location: "Berlin (DE)",
     link: "https://t.rausgegangen.de/tickets/angry-women-joanna-gemma-auguri-hazel-iris-anchoress-aniqo"
   }
-  ]
+  ].filter((e)=>{ return e.date > new Date(new Date().getFullYear(), 0, 1) })
+ 
+
   iconLinks: IconLink[]= [{
     //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
     text: "BANDCAMP",

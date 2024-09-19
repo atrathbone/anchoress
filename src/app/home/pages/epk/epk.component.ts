@@ -35,6 +35,14 @@ export class EpkComponent {
 
     },
     {
+      date: new Date(this.getCompatableDateStr("12-10-2024")),
+      venue: "Café Babette/Deep See",
+      location: "(DE)",
+      notes: "Anna Lucia Solo",
+      link: "https://cafebabette.de/art-events/above-nothing/"
+
+    },
+    {
       date: new Date(this.getCompatableDateStr("10-26-2024")),
       venue: "Kunstverein Schwerin",
       location: "(DE)",
