@@ -21,24 +21,24 @@
 <div class="epk-display">
     <div id="section-one">
         <div [class]="!resService.isPhoneOrTabletPortrait() ? 'desktop-header' : 'phone-header'">
-            
+
             <div class="logo-container">
                 <img [class]="resService.isPhoneOrTabletPortrait() ? 'logo-phone' : 'logo'" src="assets/images/anchoress_logo.png" alt="logo">
             </div>
         </div>
     </div>
     <div #sectionTwo>
-        <app-bio></app-bio>    
+        <app-bio></app-bio>
     </div>
     <div #sectionThree>
-        <app-music></app-music>    
+        <app-music></app-music>
     </div>
     <div #sectionFour>
-        <app-videos></app-videos>    
+        <app-videos></app-videos>
     </div>
     <div id="section-five" #sectionFive>
         <span>LIVE SHOWS</span>
-        <app-live-dates-list [sortByYear]="true" [liveDates]="liveDates"></app-live-dates-list>    
+        <app-live-dates-list [sortByYear]="true" [liveDates]="liveDates"></app-live-dates-list>
     </div>
     <div #sectionSix>
         <app-images></app-images>
