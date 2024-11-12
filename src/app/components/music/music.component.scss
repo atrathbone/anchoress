@@ -1,9 +1,15 @@
-.music-container{
-    padding: 60px 30px 50px 30px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;  
-    color: white;
+.music-container {
+  padding: 60px 30px 50px 30px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  gap: 25px;
+
+  iframe {
+    min-height: 400px;
+  }
 }
 
