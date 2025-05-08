@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { IconLink } from '../../types/types'
+import {Component, Input, OnInit} from '@angular/core';
+import {IconLink} from '../../types/types'
 
 @Component({
   selector: 'app-links-container',
@@ -8,8 +8,10 @@ import { IconLink } from '../../types/types'
 })
 export class LinksContainerComponent implements OnInit {
   @Input()
-  iconLinks! : IconLink[];
-  constructor() { }
+  iconLinks!: IconLink[];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

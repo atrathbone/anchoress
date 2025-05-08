@@ -1,4 +1,4 @@
-import {Component, isDevMode} from '@angular/core';
+import {Component} from '@angular/core';
 import {ResponsiveService} from 'src/app/responsive.service';
 import {IconLink, LiveDate} from 'src/app/types/types';
 import {LiveDates} from "../../../util/live-dates";

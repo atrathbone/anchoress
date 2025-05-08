@@ -1,35 +1,34 @@
 <div *ngIf="sortByYear; else dont">
-    <div class="live-dates">
+  <div class="live-dates">
     <div *ngFor="let k of dateKeys">
-        <span>{{k}}</span>
-            <div *ngFor="let liveDate of sortedByYear[k]; index as i">
-                <ng-container 
-                     [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink" 
-                     [ngTemplateOutletContext]="{liveDate:liveDate}">
-                </ng-container>
-            </div>
-        </div>    
+      <span>{{k}}</span>
+      <div *ngFor="let liveDate of sortedByYear[k]; index as i">
+        <ng-container
+          [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink"
+          [ngTemplateOutletContext]="{liveDate:liveDate}">
+        </ng-container>
+      </div>
     </div>
+  </div>
 </div>
 <ng-template #dont>
-    <div class="live-dates">
-        <div *ngFor="let liveDate of orderedDates; index as i">
-            <ng-container 
-                 [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink" 
-                 [ngTemplateOutletContext]="{liveDate:liveDate}">
-            </ng-container>
-        </div>
+  <div class="live-dates">
+    <div *ngFor="let liveDate of orderedDates; index as i">
+      <ng-container
+        [ngTemplateOutlet]="liveDate.link != undefined ? link : noLink"
+        [ngTemplateOutletContext]="{liveDate:liveDate}">
+      </ng-container>
     </div>
+  </div>
 </ng-template>
-
 
 
 <ng-template #noLink let-liveDate="liveDate">
-    <span>{{this.getLiveDateString(liveDate)}}</span>
+  <span>{{this.getLiveDateString(liveDate)}}</span>
 </ng-template>
 
 <ng-template #link let-liveDate="liveDate">
-    <a [href]="liveDate.link"><span >{{this.getLiveDateString(liveDate)}}</span></a>
+  <a [href]="liveDate.link"><span>{{this.getLiveDateString(liveDate)}}</span></a>
 </ng-template>
 
 

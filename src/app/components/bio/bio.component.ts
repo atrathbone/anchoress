@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ResponsiveService } from 'src/app/responsive.service';
+import {Component} from '@angular/core';
+import {ResponsiveService} from 'src/app/responsive.service';
 
 @Component({
   selector: 'app-bio',
@@ -9,7 +9,8 @@ import { ResponsiveService } from 'src/app/responsive.service';
 
 export class BioComponent {
   resService: ResponsiveService;
-  constructor(private responsive: ResponsiveService){
+
+  constructor(private responsive: ResponsiveService) {
     this.resService = responsive;
   }
 }

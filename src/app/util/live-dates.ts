@@ -3,10 +3,31 @@ import {LiveDate} from "../types/types";
 export class LiveDates {
   public static liveDates: LiveDate[] = [
     {
+      date: new Date(this.getCompatableDateStr("06-25-2025")),
+      venue: "TBC",
+      location: "(DE)",
+    },
+    {
+      date: new Date(this.getCompatableDateStr("05-08-2025")),
+      venue: "Kantine am Berghain",
+      location: "(DE)",
+      notes: "supporting 'Circuit des Yeux'",
+      link: "https://www.tixforgigs.com/Event/60322"
+
+    },
+    {
+      date: new Date(this.getCompatableDateStr("04-25-2025")),
+      venue: "Schokoladen",
+      location: "(DE)",
+      notes: "Anna Lucia Solo - supporting 'Rats on Rafts'",
+      link: "https://schokoladen.tickettoaster.de/produkte/74851-tickets-rats-on-rafts-post-punk-wave-nl-schokoladen-berlin-am-25-04-2025"
+
+    },
+    {
       date: new Date(this.getCompatableDateStr("03-16-2025")),
       venue: "Kantine am Berghain",
       location: "(DE)",
-      notes: "Anna Lucia Solo",
+      notes: "Anna Lucia Solo - supporting Joanna Gemma Auguri",
       link: "https://www.berghain.berlin/de/event/79609/"
 
     },

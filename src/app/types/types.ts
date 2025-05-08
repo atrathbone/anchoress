@@ -1,13 +1,13 @@
 export type IconLink = {
-  iconUrl?: string, 
-  linkUrl?: string, 
+  iconUrl?: string,
+  linkUrl?: string,
   text?: string
 }
 
 export type LiveDate = {
-  date: Date, 
-  venue: string, 
-  location: string, 
+  date: Date,
+  venue: string,
+  location: string,
   notes?: string,
   link?: string
 }

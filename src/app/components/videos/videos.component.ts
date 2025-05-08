@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ResponsiveService } from 'src/app/responsive.service';
+import {Component} from '@angular/core';
+import {ResponsiveService} from 'src/app/responsive.service';
 
 @Component({
   selector: 'app-videos',
@@ -7,9 +7,9 @@ import { ResponsiveService } from 'src/app/responsive.service';
   styleUrl: './videos.component.scss'
 })
 export class VideosComponent {
-resService: ResponsiveService
+  resService: ResponsiveService
 
-constructor(private responsive: ResponsiveService){
-  this.resService = responsive;
-}
+  constructor(private responsive: ResponsiveService) {
+    this.resService = responsive;
+  }
 }
