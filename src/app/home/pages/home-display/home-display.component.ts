@@ -13,19 +13,16 @@ export class HomeDisplayComponent {
   liveDates: LiveDate[] = LiveDates.liveDates;
 
   iconLinks: IconLink[] = [{
-    //iconUrl:"assets/images/logos/bandcamp-logo.svg.png",
     text: "BANDCAMP",
     linkUrl: "https://anchoress-official.bandcamp.com/album/in-times-where-eyes-are-low"
   },
     {
-      //iconUrl:"assets/images/logos/insta-logo.svg.png",
       text: "INSTAGRAM",
       linkUrl: "https://www.instagram.com/anchoress_band"
     },
     {
-      //iconUrl:"assets/images/logos/soundcloud-logo.png",
-      text: "SOUNDCLOUD",
-      linkUrl: "https://soundcloud.com/anchoress-berlin"
+      text: "SPOTIFY",
+      linkUrl: "https://open.spotify.com/intl-de/artist/3XQXk4cqvvAB5n2NslRo7G?si=RjbwZASqR2qb4m_dnLUbiw"
     },]
 
   constructor(private responsive: ResponsiveService) {
