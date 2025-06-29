@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home.component';
-import {HomeDisplayComponent} from './pages/home-display/home-display.component';
-import {EpkComponent} from './pages/epk/epk.component';
+import {HomeDisplayComponent} from './home-display/home-display.component';
 
 const routes: Routes = [{
   path: "",
@@ -11,10 +10,6 @@ const routes: Routes = [{
     {
       path: '',
       component: HomeDisplayComponent,
-    },
-    {
-      path: 'epk',
-      component: EpkComponent,
     },
   ]
 }];
