@@ -1,3 +1,11 @@
 <div class="home-container" [class]="resService.isPhoneOrTabletPortrait() ? 'phone-background' : 'background'">
+  <video #bgVideo
+    autoplay
+    muted
+    loop
+    playsinline
+    class="background-video"
+    src="/assets/images/web cut 1080p_web.mp4"
+  ></video>
   <router-outlet></router-outlet>
 </div>
