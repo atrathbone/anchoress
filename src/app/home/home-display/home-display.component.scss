@@ -40,7 +40,7 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: flex-end;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .desktop-header, .phone-header {
@@ -62,17 +62,22 @@
 
 .desktop-dates {
   max-height: 75vh;
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
 }
 
 .phone-dates, .desktop-dates {
   overflow-y: auto;
-  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
   padding-bottom: 10%;
-  padding-top: 10%;
-  max-height: 45vh;
+  max-height: calc(var(--vh, 1vh) * 40);
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.phone-dates {
+  padding-top: 10%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 .phone-dates::-webkit-scrollbar {
