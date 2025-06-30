@@ -27,8 +27,8 @@ export class HomeDisplayComponent {
       linkUrl: "https://open.spotify.com/intl-de/artist/3XQXk4cqvvAB5n2NslRo7G?si=RjbwZASqR2qb4m_dnLUbiw"
     },
     {
-      text: "CONTACT",
-      linkUrl: "mailto:anchoress.official@gmail.com"
+      text: "BOOKING",
+      linkUrl: "https://sonicarts.net/artist/anchoress/"
     }
   ]
 
